@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Chart as Chartjs } from 'chart.js/auto';
-import { Line } from 'react-chartjs-2';
 import './App.css';
 import {
   AreaChart,
@@ -9,7 +7,6 @@ import {
   Area,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip
 } from "recharts";
 
@@ -65,6 +62,7 @@ function App() {
   })
   return (
     <div className="App">
+      
       <label>select date:
         <input
           type="text"
